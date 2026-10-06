@@ -1,0 +1,18 @@
+menu "AETHER Node Configuration"
+
+    config AETHER_NODE_ID
+        int "Node ID (0..3)"
+        range 0 3
+        default 0
+        help
+            ID unik node ini, sesuai urutan di NODE_MAC_TABLE (aether_config.h).
+
+    config AETHER_TOTAL_NODES
+        int "Total node dalam jaringan RTI"
+        range 1 4
+        default 2
+        help
+            Harus SAMA di semua node. Set 2 dulu untuk testing awal,
+            naikkan ke 4 setelah semua node siap.
+
+endmenu

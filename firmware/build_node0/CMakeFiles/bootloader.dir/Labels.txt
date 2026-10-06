@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Project/csi/firmware/build_node0/CMakeFiles/bootloader
+C:/Project/csi/firmware/build_node0/CMakeFiles/bootloader.rule
+C:/Project/csi/firmware/build_node0/CMakeFiles/bootloader-complete.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Project/csi/firmware/build_node0/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

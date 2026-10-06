@@ -1,0 +1,2 @@
+source C:/Project/csi/firmware/build_node0/bootloader/gdbinit/symbols
+source C:/Project/csi/firmware/build_node0/bootloader/gdbinit/connect

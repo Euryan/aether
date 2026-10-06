@@ -1,0 +1,747 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\espidf\.espressif\v6.1\esp-idf\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\espidf\.espressif\v6.1\esp-idf\tools\idf.py' '-p' 'COM6'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+[0;32mI (24) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 24 2026 16:46:52[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a454h (107604) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0002a47c vaddr=3fc97b00 size=05184h ( 20868) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0002f608 vaddr=40374000 size=00a10h (  2576) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=84d44h (544068) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b4d6c vaddr=40374a10 size=130c0h ( 78016) load[0m
+[0;32mI (234) esp_image: segment 5: paddr=000c7e34 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (243) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (243) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (262) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (268) app_init: Project name:     aether_node[0m
+[0;32mI (272) app_init: App version:      1[0m
+[0;32mI (276) app_init: Compile time:     Sep 24 2026 16:46:27[0m
+[0;32mI (281) app_init: ELF file SHA256:  f51582014...[0m
+[0;32mI (285) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (289) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (293) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (297) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (301) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FCA0E80 len 00048890 (290 KiB): RAM[0m
+[0;32mI (312) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (317) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: mxic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (353) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (360) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (410) pp: pp rom version: e7ae62f[0m
+[0;32mI (410) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (420) wifi:wifi driver task: 3fcee898, prio:23, stack:6656, core=0[0m
+[0;32mI (430) wifi:wifi firmware version: e12a754[0m
+[0;32mI (430) wifi:wifi certification version: v7.0[0m
+[0;32mI (430) wifi:config NVS flash: enabled[0m
+[0;32mI (430) wifi:config nano formatting: disabled[0m
+[0;32mI (440) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (440) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (440) wifi:Init management short buffer num: 32[0m
+[0;32mI (450) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (450) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (460) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (460) wifi:Init static rx buffer num: 10[0m
+[0;32mI (460) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi_init: rx ba win: 6[0m
+[0;32mI (470) wifi_init: accept mbox: 6[0m
+[0;32mI (470) wifi_init: tcpip mbox: 32[0m
+[0;32mI (480) wifi_init: udp mbox: 6[0m
+[0;32mI (480) wifi_init: tcp mbox: 6[0m
+[0;32mI (480) wifi_init: tcp tx win: 5760[0m
+[0;32mI (490) wifi_init: tcp rx win: 5760[0m
+[0;32mI (490) wifi_init: tcp mss: 1440[0m
+[0;32mI (490) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (500) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (500) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (540) wifi:mode : sta (b8:1f:3f:bb:ca:94)[0m
+[0;32mI (540) wifi:enable tsf[0m
+[0;32mI (550) wifi:ic_enable_sniffer[0m
+[0;32mI (550) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (550) AETHER_NODE: AETHER Node 1 siap. Total node: 2[0m
+[0;32mI (630) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1, type=0[0m
+[0;32mI (3600) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=51, type=0[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+[0;32mI (24) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 24 2026 16:46:52[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a454h (107604) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0002a47c vaddr=3fc97b00 size=05184h ( 20868) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0002f608 vaddr=40374000 size=00a10h (  2576) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=84d44h (544068) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b4d6c vaddr=40374a10 size=130c0h ( 78016) load[0m
+[0;32mI (234) esp_image: segment 5: paddr=000c7e34 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (243) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (243) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (262) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (268) app_init: Project name:     aether_node[0m
+[0;32mI (272) app_init: App version:      1[0m
+[0;32mI (276) app_init: Compile time:     Sep 24 2026 16:46:27[0m
+[0;32mI (281) app_init: ELF file SHA256:  f51582014...[0m
+[0;32mI (285) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (289) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (293) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (297) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (301) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FCA0E80 len 00048890 (290 KiB): RAM[0m
+[0;32mI (312) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (317) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: mxic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (353) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (360) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (410) pp: pp rom version: e7ae62f[0m
+[0;32mI (410) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (420) wifi:wifi driver task: 3fcee898, prio:23, stack:6656, core=0[0m
+[0;32mI (430) wifi:wifi firmware version: e12a754[0m
+[0;32mI (430) wifi:wifi certification version: v7.0[0m
+[0;32mI (430) wifi:config NVS flash: enabled[0m
+[0;32mI (430) wifi:config nano formatting: disabled[0m
+[0;32mI (440) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (440) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (440) wifi:Init management short buffer num: 32[0m
+[0;32mI (450) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (450) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (460) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (460) wifi:Init static rx buffer num: 10[0m
+[0;32mI (460) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (470) wifi_init: rx ba win: 6[0m
+[0;32mI (470) wifi_init: accept mbox: 6[0m
+[0;32mI (470) wifi_init: tcpip mbox: 32[0m
+[0;32mI (480) wifi_init: udp mbox: 6[0m
+[0;32mI (480) wifi_init: tcp mbox: 6[0m
+[0;32mI (480) wifi_init: tcp tx win: 5760[0m
+[0;32mI (490) wifi_init: tcp rx win: 5760[0m
+[0;32mI (490) wifi_init: tcp mss: 1440[0m
+[0;32mI (490) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (500) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (500) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (540) wifi:mode : sta (b8:1f:3f:bb:ca:94)[0m
+[0;32mI (540) wifi:enable tsf[0m
+[0;32mI (550) wifi:ic_enable_sniffer[0m
+[0;32mI (550) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (550) AETHER_NODE: AETHER Node 1 siap. Total node: 2[0m
+[0;32mI (600) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1, type=0[0m
+[0;32mI (3250) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=51, type=0[0m
+[0;32mI (5410) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=101, type=2[0m
+[0;32mI (8270) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=151, type=0[0m
+[0;32mI (8460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=0, next_token=0[0m
+[0;32mI (8480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=1, next_token=0[0m
+[0;32mI (8500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=2, next_token=0[0m
+[0;32mI (8520) AETHER_NODE: ESP-NOW diterima dari node 0, seq=3, next_token=0[0m
+[0;32mI (8540) AETHER_NODE: ESP-NOW diterima dari node 0, seq=4, next_token=1[0m
+[0;32mI (8670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=5, next_token=0[0m
+[0;32mI (8690) AETHER_NODE: ESP-NOW diterima dari node 0, seq=6, next_token=0[0m
+[0;32mI (8710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=7, next_token=0[0m
+[0;32mI (8730) AETHER_NODE: ESP-NOW diterima dari node 0, seq=8, next_token=0[0m
+[0;32mI (8750) AETHER_NODE: ESP-NOW diterima dari node 0, seq=9, next_token=1[0m
+[0;32mI (8880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=10, next_token=0[0m
+[0;32mI (8900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=11, next_token=0[0m
+[0;32mI (8920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=12, next_token=0[0m
+[0;32mI (8940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=13, next_token=0[0m
+[0;32mI (8960) AETHER_NODE: ESP-NOW diterima dari node 0, seq=14, next_token=1[0m
+[0;32mI (9090) AETHER_NODE: ESP-NOW diterima dari node 0, seq=15, next_token=0[0m
+[0;32mI (9110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=16, next_token=0[0m
+[0;32mI (9130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=17, next_token=0[0m
+[0;32mI (9150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=18, next_token=0[0m
+[0;32mI (9170) AETHER_NODE: ESP-NOW diterima dari node 0, seq=19, next_token=1[0m
+[0;32mI (9300) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=201, type=0[0m
+[0;32mI (9300) AETHER_NODE: ESP-NOW diterima dari node 0, seq=20, next_token=0[0m
+[0;32mI (9320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=21, next_token=0[0m
+[0;32mI (9340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=22, next_token=0[0m
+[0;32mI (9360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=23, next_token=0[0m
+[0;32mI (9380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=24, next_token=1[0m
+[0;32mI (9510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=25, next_token=0[0m
+[0;32mI (9530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=26, next_token=0[0m
+[0;32mI (9550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=27, next_token=0[0m
+[0;32mI (9570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=28, next_token=0[0m
+[0;32mI (9590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=29, next_token=1[0m
+[0;32mI (9720) AETHER_NODE: ESP-NOW diterima dari node 0, seq=30, next_token=0[0m
+[0;32mI (9740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=31, next_token=0[0m
+[0;32mI (9760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=32, next_token=0[0m
+[0;32mI (9780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=33, next_token=0[0m
+[0;32mI (9800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=34, next_token=1[0m
+[0;32mI (9940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=35, next_token=0[0m
+[0;32mI (9960) AETHER_NODE: ESP-NOW diterima dari node 0, seq=36, next_token=0[0m
+[0;32mI (9980) AETHER_NODE: ESP-NOW diterima dari node 0, seq=37, next_token=0[0m
+[0;32mI (10000) AETHER_NODE: ESP-NOW diterima dari node 0, seq=38, next_token=0[0m
+[0;32mI (10020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=39, next_token=1[0m
+[0;32mI (10160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=40, next_token=0[0m
+[0;32mI (10160) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=251, type=2[0m
+[0;32mI (10180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=41, next_token=0[0m
+[0;32mI (10200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=42, next_token=0[0m
+[0;32mI (10220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=43, next_token=0[0m
+[0;32mI (10230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=44, next_token=1[0m
+[0;32mI (10360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=45, next_token=0[0m
+[0;32mI (10380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=46, next_token=0[0m
+[0;32mI (10400) AETHER_NODE: ESP-NOW diterima dari node 0, seq=47, next_token=0[0m
+[0;32mI (10420) AETHER_NODE: ESP-NOW diterima dari node 0, seq=48, next_token=0[0m
+[0;32mI (10450) AETHER_NODE: ESP-NOW diterima dari node 0, seq=49, next_token=1[0m
+[0;32mI (10580) AETHER_NODE: ESP-NOW diterima dari node 0, seq=50, next_token=0[0m
+[0;32mI (10610) AETHER_NODE: ESP-NOW diterima dari node 0, seq=51, next_token=0[0m
+[0;32mI (10630) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=301, type=0[0m
+[0;32mI (10630) AETHER_NODE: ESP-NOW diterima dari node 0, seq=52, next_token=0[0m
+[0;32mI (10640) AETHER_NODE: ESP-NOW diterima dari node 0, seq=53, next_token=0[0m
+[0;32mI (10670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=54, next_token=1[0m
+[0;32mI (10810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=55, next_token=0[0m
+[0;32mI (10830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=56, next_token=0[0m
+[0;32mI (10860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=57, next_token=0[0m
+[0;32mI (10870) AETHER_NODE: ESP-NOW diterima dari node 0, seq=58, next_token=0[0m
+[0;32mI (10890) AETHER_NODE: ESP-NOW diterima dari node 0, seq=59, next_token=1[0m
+[0;32mI (11020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=60, next_token=0[0m
+[0;32mI (11040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=61, next_token=0[0m
+[0;32mI (11060) AETHER_NODE: ESP-NOW diterima dari node 0, seq=62, next_token=0[0m
+[0;32mI (11080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=63, next_token=0[0m
+[0;32mI (11100) AETHER_NODE: ESP-NOW diterima dari node 0, seq=64, next_token=1[0m
+[0;32mI (11230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=65, next_token=0[0m
+[0;32mI (11250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=66, next_token=0[0m
+[0;32mI (11270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=67, next_token=0[0m
+[0;32mI (11290) AETHER_NODE: ESP-NOW diterima dari node 0, seq=68, next_token=0[0m
+[0;32mI (11310) AETHER_NODE: ESP-NOW diterima dari node 0, seq=69, next_token=1[0m
+[0;32mI (11440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=70, next_token=0[0m
+[0;32mI (11460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=71, next_token=0[0m
+[0;32mI (11480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=72, next_token=0[0m
+[0;32mI (11500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=73, next_token=0[0m
+[0;32mI (11520) AETHER_NODE: ESP-NOW diterima dari node 0, seq=74, next_token=1[0m
+[0;32mI (11660) AETHER_NODE: ESP-NOW diterima dari node 0, seq=75, next_token=0[0m
+[0;32mI (11670) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=351, type=0[0m
+[0;32mI (11670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=76, next_token=0[0m
+[0;32mI (11700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=77, next_token=0[0m
+[0;32mI (11710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=78, next_token=0[0m
+[0;32mI (11730) AETHER_NODE: ESP-NOW diterima dari node 0, seq=79, next_token=1[0m
+[0;32mI (11860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=80, next_token=0[0m
+[0;32mI (11880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=81, next_token=0[0m
+[0;32mI (11900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=82, next_token=0[0m
+[0;32mI (11920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=83, next_token=0[0m
+[0;32mI (11940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=84, next_token=1[0m
+[0;32mI (12080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=85, next_token=0[0m
+[0;32mI (12100) AETHER_NODE: ESP-NOW diterima dari node 0, seq=86, next_token=0[0m
+[0;32mI (12120) AETHER_NODE: ESP-NOW diterima dari node 0, seq=87, next_token=0[0m
+[0;32mI (12140) AETHER_NODE: ESP-NOW diterima dari node 0, seq=88, next_token=0[0m
+[0;32mI (12150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=89, next_token=1[0m
+[0;32mI (12280) AETHER_NODE: ESP-NOW diterima dari node 0, seq=90, next_token=0[0m
+[0;32mI (12300) AETHER_NODE: ESP-NOW diterima dari node 0, seq=91, next_token=0[0m
+[0;32mI (12320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=92, next_token=0[0m
+[0;32mI (12340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=93, next_token=0[0m
+[0;32mI (12360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=94, next_token=1[0m
+[0;32mI (12490) AETHER_NODE: ESP-NOW diterima dari node 0, seq=95, next_token=0[0m
+[0;32mI (12510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=96, next_token=0[0m
+[0;32mI (12540) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=401, type=0[0m
+[0;32mI (12540) AETHER_NODE: ESP-NOW diterima dari node 0, seq=97, next_token=0[0m
+[0;32mI (12550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=98, next_token=0[0m
+[0;32mI (12570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=99, next_token=1[0m
+[0;32mI (12700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=100, next_token=0[0m
+[0;32mI (12720) AETHER_NODE: ESP-NOW diterima dari node 0, seq=101, next_token=0[0m
+[0;32mI (12740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=102, next_token=0[0m
+[0;32mI (12760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=103, next_token=0[0m
+[0;32mI (12780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=104, next_token=1[0m
+[0;32mI (12910) AETHER_NODE: ESP-NOW diterima dari node 0, seq=105, next_token=0[0m
+[0;32mI (12930) AETHER_NODE: ESP-NOW diterima dari node 0, seq=106, next_token=0[0m
+[0;32mI (12950) AETHER_NODE: ESP-NOW diterima dari node 0, seq=107, next_token=0[0m
+[0;32mI (12970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=108, next_token=0[0m
+[0;32mI (12990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=109, next_token=1[0m
+[0;32mI (13120) AETHER_NODE: ESP-NOW diterima dari node 0, seq=110, next_token=0[0m
+[0;32mI (13140) AETHER_NODE: ESP-NOW diterima dari node 0, seq=111, next_token=0[0m
+[0;32mI (13160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=112, next_token=0[0m
+[0;32mI (13190) AETHER_NODE: ESP-NOW diterima dari node 0, seq=113, next_token=0[0m
+[0;32mI (13200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=114, next_token=1[0m
+[0;32mI (13330) AETHER_NODE: ESP-NOW diterima dari node 0, seq=115, next_token=0[0m
+[0;32mI (13350) AETHER_NODE: ESP-NOW diterima dari node 0, seq=116, next_token=0[0m
+[0;32mI (13370) AETHER_NODE: ESP-NOW diterima dari node 0, seq=117, next_token=0[0m
+[0;32mI (13390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=118, next_token=0[0m
+[0;32mI (13410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=119, next_token=1[0m
+[0;32mI (13540) AETHER_NODE: ESP-NOW diterima dari node 0, seq=120, next_token=0[0m
+[0;32mI (13550) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=451, type=2[0m
+[0;32mI (13560) AETHER_NODE: ESP-NOW diterima dari node 0, seq=121, next_token=0[0m
+[0;32mI (13580) AETHER_NODE: ESP-NOW diterima dari node 0, seq=122, next_token=0[0m
+[0;32mI (13600) AETHER_NODE: ESP-NOW diterima dari node 0, seq=123, next_token=0[0m
+[0;32mI (13620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=124, next_token=1[0m
+[0;32mI (13750) AETHER_NODE: ESP-NOW diterima dari node 0, seq=125, next_token=0[0m
+[0;32mI (13770) AETHER_NODE: ESP-NOW diterima dari node 0, seq=126, next_token=0[0m
+[0;32mI (13790) AETHER_NODE: ESP-NOW diterima dari node 0, seq=127, next_token=0[0m
+[0;32mI (13810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=128, next_token=0[0m
+[0;32mI (13830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=129, next_token=1[0m
+[0;32mI (13960) AETHER_NODE: ESP-NOW diterima dari node 0, seq=130, next_token=0[0m
+[0;32mI (13980) AETHER_NODE: ESP-NOW diterima dari node 0, seq=131, next_token=0[0m
+[0;32mI (14000) AETHER_NODE: ESP-NOW diterima dari node 0, seq=132, next_token=0[0m
+[0;32mI (14020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=133, next_token=0[0m
+[0;32mI (14040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=134, next_token=1[0m
+[0;32mI (14170) AETHER_NODE: ESP-NOW diterima dari node 0, seq=135, next_token=0[0m
+[0;32mI (14190) AETHER_NODE: ESP-NOW diterima dari node 0, seq=136, next_token=0[0m
+[0;32mI (14220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=137, next_token=0[0m
+[0;32mI (14230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=138, next_token=0[0m
+[0;32mI (14250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=139, next_token=1[0m
+[0;32mI (14380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=140, next_token=0[0m
+[0;32mI (14400) AETHER_NODE: ESP-NOW diterima dari node 0, seq=141, next_token=0[0m
+[0;32mI (14420) AETHER_NODE: ESP-NOW diterima dari node 0, seq=142, next_token=0[0m
+[0;32mI (14440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=143, next_token=0[0m
+[0;32mI (14460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=144, next_token=1[0m
+[0;32mI (14590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=145, next_token=0[0m
+[0;32mI (14620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=146, next_token=0[0m
+[0;32mI (14630) AETHER_NODE: ESP-NOW diterima dari node 0, seq=147, next_token=0[0m
+[0;32mI (14650) AETHER_NODE: ESP-NOW diterima dari node 0, seq=148, next_token=0[0m
+[0;32mI (14670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=149, next_token=1[0m
+[0;32mI (14800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=150, next_token=0[0m
+[0;32mI (14820) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=501, type=0[0m
+[0;32mI (14820) AETHER_NODE: ESP-NOW diterima dari node 0, seq=151, next_token=0[0m
+[0;32mI (14840) AETHER_NODE: ESP-NOW diterima dari node 0, seq=152, next_token=0[0m
+[0;32mI (14860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=153, next_token=0[0m
+[0;32mI (14880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=154, next_token=1[0m
+[0;32mI (15010) AETHER_NODE: ESP-NOW diterima dari node 0, seq=155, next_token=0[0m
+[0;32mI (15040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=156, next_token=0[0m
+[0;32mI (15050) AETHER_NODE: ESP-NOW diterima dari node 0, seq=157, next_token=0[0m
+[0;32mI (15070) AETHER_NODE: ESP-NOW diterima dari node 0, seq=158, next_token=0[0m
+[0;32mI (15100) AETHER_NODE: ESP-NOW diterima dari node 0, seq=159, next_token=1[0m
+[0;32mI (15230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=160, next_token=0[0m
+[0;32mI (15250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=161, next_token=0[0m
+[0;32mI (15270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=162, next_token=0[0m
+[0;32mI (15290) AETHER_NODE: ESP-NOW diterima dari node 0, seq=163, next_token=0[0m
+[0;32mI (15310) AETHER_NODE: ESP-NOW diterima dari node 0, seq=164, next_token=1[0m
+[0;32mI (15440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=165, next_token=0[0m
+[0;32mI (15460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=166, next_token=0[0m
+[0;32mI (15480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=167, next_token=0[0m
+[0;32mI (15500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=168, next_token=0[0m
+[0;32mI (15520) AETHER_NODE: ESP-NOW diterima dari node 0, seq=169, next_token=1[0m
+[0;32mI (15650) AETHER_NODE: ESP-NOW diterima dari node 0, seq=170, next_token=0[0m
+[0;32mI (15670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=171, next_token=0[0m
+[0;32mI (15690) AETHER_NODE: ESP-NOW diterima dari node 0, seq=172, next_token=0[0m
+[0;32mI (15710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=173, next_token=0[0m
+[0;32mI (15730) AETHER_NODE: ESP-NOW diterima dari node 0, seq=174, next_token=1[0m
+[0;32mI (15860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=175, next_token=0[0m
+[0;32mI (15880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=176, next_token=0[0m
+[0;32mI (15900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=177, next_token=0[0m
+[0;32mI (15920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=178, next_token=0[0m
+[0;32mI (15940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=179, next_token=1[0m
+[0;32mI (16070) AETHER_NODE: ESP-NOW diterima dari node 0, seq=180, next_token=0[0m
+[0;32mI (16090) AETHER_NODE: ESP-NOW diterima dari node 0, seq=181, next_token=0[0m
+[0;32mI (16110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=182, next_token=0[0m
+[0;32mI (16130) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=551, type=0[0m
+[0;32mI (16130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=183, next_token=0[0m
+[0;32mI (16150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=184, next_token=1[0m
+[0;32mI (16280) AETHER_NODE: ESP-NOW diterima dari node 0, seq=185, next_token=0[0m
+[0;32mI (16300) AETHER_NODE: ESP-NOW diterima dari node 0, seq=186, next_token=0[0m
+[0;32mI (16320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=187, next_token=0[0m
+[0;32mI (16340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=188, next_token=0[0m
+[0;32mI (16360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=189, next_token=1[0m
+[0;32mI (16490) AETHER_NODE: ESP-NOW diterima dari node 0, seq=190, next_token=0[0m
+[0;32mI (16510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=191, next_token=0[0m
+[0;32mI (16530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=192, next_token=0[0m
+[0;32mI (16550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=193, next_token=0[0m
+[0;32mI (16570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=194, next_token=1[0m
+[0;32mI (16700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=195, next_token=0[0m
+[0;32mI (16720) AETHER_NODE: ESP-NOW diterima dari node 0, seq=196, next_token=0[0m
+[0;32mI (16740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=197, next_token=0[0m
+[0;32mI (16760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=198, next_token=0[0m
+[0;32mI (16780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=199, next_token=1[0m
+[0;32mI (16910) AETHER_NODE: ESP-NOW diterima dari node 0, seq=200, next_token=0[0m
+[0;32mI (16930) AETHER_NODE: ESP-NOW diterima dari node 0, seq=201, next_token=0[0m
+[0;32mI (16950) AETHER_NODE: ESP-NOW diterima dari node 0, seq=202, next_token=0[0m
+[0;32mI (16970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=203, next_token=0[0m
+[0;32mI (16990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=204, next_token=1[0m
+[0;32mI (17120) AETHER_NODE: ESP-NOW diterima dari node 0, seq=205, next_token=0[0m
+[0;32mI (17140) AETHER_NODE: ESP-NOW diterima dari node 0, seq=206, next_token=0[0m
+[0;32mI (17160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=207, next_token=0[0m
+[0;32mI (17180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=208, next_token=0[0m
+[0;32mI (17200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=209, next_token=1[0m
+[0;32mI (17330) AETHER_NODE: ESP-NOW diterima dari node 0, seq=210, next_token=0[0m
+[0;32mI (17350) AETHER_NODE: ESP-NOW diterima dari node 0, seq=211, next_token=0[0m
+[0;32mI (17370) AETHER_NODE: ESP-NOW diterima dari node 0, seq=212, next_token=0[0m
+[0;32mI (17390) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=601, type=0[0m
+[0;32mI (17390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=213, next_token=0[0m
+[0;32mI (17410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=214, next_token=1[0m
+[0;32mI (17550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=215, next_token=0[0m
+[0;32mI (17570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=216, next_token=0[0m
+[0;32mI (17590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=217, next_token=0[0m
+[0;32mI (17610) AETHER_NODE: ESP-NOW diterima dari node 0, seq=218, next_token=0[0m
+[0;32mI (17630) AETHER_NODE: ESP-NOW diterima dari node 0, seq=219, next_token=1[0m
+[0;32mI (17760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=220, next_token=0[0m
+[0;32mI (17780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=221, next_token=0[0m
+[0;32mI (17800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=222, next_token=0[0m
+[0;32mI (17820) AETHER_NODE: ESP-NOW diterima dari node 0, seq=223, next_token=0[0m
+[0;32mI (17840) AETHER_NODE: ESP-NOW diterima dari node 0, seq=224, next_token=1[0m
+[0;32mI (17970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=225, next_token=0[0m
+[0;32mI (17990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=226, next_token=0[0m
+[0;32mI (18010) AETHER_NODE: ESP-NOW diterima dari node 0, seq=227, next_token=0[0m
+[0;32mI (18030) AETHER_NODE: ESP-NOW diterima dari node 0, seq=228, next_token=0[0m
+[0;32mI (18050) AETHER_NODE: ESP-NOW diterima dari node 0, seq=229, next_token=1[0m
+[0;32mI (18180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=230, next_token=0[0m
+[0;32mI (18200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=231, next_token=0[0m
+[0;32mI (18220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=232, next_token=0[0m
+[0;32mI (18240) AETHER_NODE: ESP-NOW diterima dari node 0, seq=233, next_token=0[0m
+[0;32mI (18260) AETHER_NODE: ESP-NOW diterima dari node 0, seq=234, next_token=1[0m
+[0;32mI (18390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=235, next_token=0[0m
+[0;32mI (18410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=236, next_token=0[0m
+[0;32mI (18430) AETHER_NODE: ESP-NOW diterima dari node 0, seq=237, next_token=0[0m
+[0;32mI (18450) AETHER_NODE: ESP-NOW diterima dari node 0, seq=238, next_token=0[0m
+[0;32mI (18470) AETHER_NODE: ESP-NOW diterima dari node 0, seq=239, next_token=1[0m
+[0;32mI (18520) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=651, type=0[0m
+[0;32mI (18600) AETHER_NODE: ESP-NOW diterima dari node 0, seq=240, next_token=0[0m
+[0;32mI (18620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=241, next_token=0[0m
+[0;32mI (18640) AETHER_NODE: ESP-NOW diterima dari node 0, seq=242, next_token=0[0m
+[0;32mI (18660) AETHER_NODE: ESP-NOW diterima dari node 0, seq=243, next_token=0[0m
+[0;32mI (18680) AETHER_NODE: ESP-NOW diterima dari node 0, seq=244, next_token=1[0m
+[0;32mI (18810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=245, next_token=0[0m
+[0;32mI (18830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=246, next_token=0[0m
+[0;32mI (18850) AETHER_NODE: ESP-NOW diterima dari node 0, seq=247, next_token=0[0m
+[0;32mI (18870) AETHER_NODE: ESP-NOW diterima dari node 0, seq=248, next_token=0[0m
+[0;32mI (18890) AETHER_NODE: ESP-NOW diterima dari node 0, seq=249, next_token=1[0m
+[0;32mI (19020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=250, next_token=0[0m
+[0;32mI (19040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=251, next_token=0[0m
+[0;32mI (19060) AETHER_NODE: ESP-NOW diterima dari node 0, seq=252, next_token=0[0m
+[0;32mI (19080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=253, next_token=0[0m
+[0;32mI (19100) AETHER_NODE: ESP-NOW diterima dari node 0, seq=254, next_token=1[0m
+[0;32mI (19240) AETHER_NODE: ESP-NOW diterima dari node 0, seq=255, next_token=0[0m
+[0;32mI (19250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=256, next_token=0[0m
+[0;32mI (19270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=257, next_token=0[0m
+[0;32mI (19290) AETHER_NODE: ESP-NOW diterima dari node 0, seq=258, next_token=0[0m
+[0;32mI (19310) AETHER_NODE: ESP-NOW diterima dari node 0, seq=259, next_token=1[0m
+[0;32mI (19440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=260, next_token=0[0m
+[0;32mI (19460) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=701, type=0[0m
+[0;32mI (19460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=261, next_token=0[0m
+[0;32mI (19480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=262, next_token=0[0m
+[0;32mI (19500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=263, next_token=0[0m
+[0;32mI (19520) AETHER_NODE: ESP-NOW diterima dari node 0, seq=264, next_token=1[0m
+[0;32mI (19650) AETHER_NODE: ESP-NOW diterima dari node 0, seq=265, next_token=0[0m
+[0;32mI (19670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=266, next_token=0[0m
+[0;32mI (19690) AETHER_NODE: ESP-NOW diterima dari node 0, seq=267, next_token=0[0m
+[0;32mI (19710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=268, next_token=0[0m
+[0;32mI (19740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=269, next_token=1[0m
+[0;32mI (19860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=270, next_token=0[0m
+[0;32mI (19880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=271, next_token=0[0m
+[0;32mI (19900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=272, next_token=0[0m
+[0;32mI (19920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=273, next_token=0[0m
+[0;32mI (19940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=274, next_token=1[0m
+[0;32mI (20070) AETHER_NODE: ESP-NOW diterima dari node 0, seq=275, next_token=0[0m
+[0;32mI (20090) AETHER_NODE: ESP-NOW diterima dari node 0, seq=276, next_token=0[0m
+[0;32mI (20110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=277, next_token=0[0m
+[0;32mI (20130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=278, next_token=0[0m
+[0;32mI (20150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=279, next_token=1[0m
+[0;32mI (20280) AETHER_NODE: ESP-NOW diterima dari node 0, seq=280, next_token=0[0m
+[0;32mI (20300) AETHER_NODE: ESP-NOW diterima dari node 0, seq=281, next_token=0[0m
+[0;32mI (20320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=282, next_token=0[0m
+[0;32mI (20340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=283, next_token=0[0m
+[0;32mI (20360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=284, next_token=1[0m
+[0;32mI (20490) AETHER_NODE: ESP-NOW diterima dari node 0, seq=285, next_token=0[0m
+[0;32mI (20510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=286, next_token=0[0m
+[0;32mI (20530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=287, next_token=0[0m
+[0;32mI (20550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=288, next_token=0[0m
+[0;32mI (20570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=289, next_token=1[0m
+[0;32mI (20700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=290, next_token=0[0m
+[0;32mI (20720) AETHER_NODE: ESP-NOW diterima dari node 0, seq=291, next_token=0[0m
+[0;32mI (20740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=292, next_token=0[0m
+[0;32mI (20760) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=751, type=0[0m
+[0;32mI (20760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=293, next_token=0[0m
+[0;32mI (20780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=294, next_token=1[0m
+[0;32mI (20910) AETHER_NODE: ESP-NOW diterima dari node 0, seq=295, next_token=0[0m
+[0;32mI (20930) AETHER_NODE: ESP-NOW diterima dari node 0, seq=296, next_token=0[0m
+[0;32mI (20950) AETHER_NODE: ESP-NOW diterima dari node 0, seq=297, next_token=0[0m
+[0;32mI (20970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=298, next_token=0[0m
+[0;32mI (20990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=299, next_token=1[0m
+[0;32mI (21120) AETHER_NODE: ESP-NOW diterima dari node 0, seq=300, next_token=0[0m
+[0;32mI (21140) AETHER_NODE: ESP-NOW diterima dari node 0, seq=301, next_token=0[0m
+[0;32mI (21160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=302, next_token=0[0m
+[0;32mI (21180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=303, next_token=0[0m
+[0;32mI (21200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=304, next_token=1[0m
+[0;32mI (21330) AETHER_NODE: ESP-NOW diterima dari node 0, seq=305, next_token=0[0m
+[0;32mI (21350) AETHER_NODE: ESP-NOW diterima dari node 0, seq=306, next_token=0[0m
+[0;32mI (21370) AETHER_NODE: ESP-NOW diterima dari node 0, seq=307, next_token=0[0m
+[0;32mI (21390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=308, next_token=0[0m
+[0;32mI (21410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=309, next_token=1[0m
+[0;32mI (21540) AETHER_NODE: ESP-NOW diterima dari node 0, seq=310, next_token=0[0m
+[0;32mI (21560) AETHER_NODE: ESP-NOW diterima dari node 0, seq=311, next_token=0[0m
+[0;32mI (21580) AETHER_NODE: ESP-NOW diterima dari node 0, seq=312, next_token=0[0m
+[0;32mI (21600) AETHER_NODE: ESP-NOW diterima dari node 0, seq=313, next_token=0[0m
+[0;32mI (21620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=314, next_token=1[0m
+[0;32mI (21750) AETHER_NODE: ESP-NOW diterima dari node 0, seq=315, next_token=0[0m
+[0;32mI (21770) AETHER_NODE: ESP-NOW diterima dari node 0, seq=316, next_token=0[0m
+[0;32mI (21790) AETHER_NODE: ESP-NOW diterima dari node 0, seq=317, next_token=0[0m
+[0;32mI (21810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=318, next_token=0[0m
+[0;32mI (21830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=319, next_token=1[0m
+[0;32mI (21960) AETHER_NODE: ESP-NOW diterima dari node 0, seq=320, next_token=0[0m
+[0;32mI (21980) AETHER_NODE: ESP-NOW diterima dari node 0, seq=321, next_token=0[0m
+[0;32mI (22000) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=801, type=0[0m
+[0;32mI (22000) AETHER_NODE: ESP-NOW diterima dari node 0, seq=322, next_token=0[0m
+[0;32mI (22020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=323, next_token=0[0m
+[0;32mI (22040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=324, next_token=1[0m
+[0;32mI (22170) AETHER_NODE: ESP-NOW diterima dari node 0, seq=325, next_token=0[0m
+[0;32mI (22190) AETHER_NODE: ESP-NOW diterima dari node 0, seq=326, next_token=0[0m
+[0;32mI (22210) AETHER_NODE: ESP-NOW diterima dari node 0, seq=327, next_token=0[0m
+[0;32mI (22230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=328, next_token=0[0m
+[0;32mI (22250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=329, next_token=1[0m
+[0;32mI (22380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=330, next_token=0[0m
+[0;32mI (22400) AETHER_NODE: ESP-NOW diterima dari node 0, seq=331, next_token=0[0m
+[0;32mI (22420) AETHER_NODE: ESP-NOW diterima dari node 0, seq=332, next_token=0[0m
+[0;32mI (22440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=333, next_token=0[0m
+[0;32mI (22460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=334, next_token=1[0m
+[0;32mI (22590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=335, next_token=0[0m
+[0;32mI (22610) AETHER_NODE: ESP-NOW diterima dari node 0, seq=336, next_token=0[0m
+[0;32mI (22630) AETHER_NODE: ESP-NOW diterima dari node 0, seq=337, next_token=0[0m
+[0;32mI (22650) AETHER_NODE: ESP-NOW diterima dari node 0, seq=338, next_token=0[0m
+[0;32mI (22670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=339, next_token=1[0m
+[0;32mI (22800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=340, next_token=0[0m
+[0;32mI (22820) AETHER_NODE: ESP-NOW diterima dari node 0, seq=341, next_token=0[0m
+[0;32mI (22840) AETHER_NODE: ESP-NOW diterima dari node 0, seq=342, next_token=0[0m
+[0;32mI (22860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=343, next_token=0[0m
+[0;32mI (22880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=344, next_token=1[0m
+[0;32mI (23010) AETHER_NODE: ESP-NOW diterima dari node 0, seq=345, next_token=0[0m
+[0;32mI (23030) AETHER_NODE: ESP-NOW diterima dari node 0, seq=346, next_token=0[0m
+[0;32mI (23050) AETHER_NODE: ESP-NOW diterima dari node 0, seq=347, next_token=0[0m
+[0;32mI (23070) AETHER_NODE: ESP-NOW diterima dari node 0, seq=348, next_token=0[0m
+[0;32mI (23090) AETHER_NODE: ESP-NOW diterima dari node 0, seq=349, next_token=1[0m
+[0;32mI (23220) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=851, type=0[0m
+[0;32mI (23220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=350, next_token=0[0m
+[0;32mI (23240) AETHER_NODE: ESP-NOW diterima dari node 0, seq=351, next_token=0[0m
+[0;32mI (23260) AETHER_NODE: ESP-NOW diterima dari node 0, seq=352, next_token=0[0m
+[0;32mI (23280) AETHER_NODE: ESP-NOW diterima dari node 0, seq=353, next_token=0[0m
+[0;32mI (23300) AETHER_NODE: ESP-NOW diterima dari node 0, seq=354, next_token=1[0m
+[0;32mI (23430) AETHER_NODE: ESP-NOW diterima dari node 0, seq=355, next_token=0[0m
+[0;32mI (23450) AETHER_NODE: ESP-NOW diterima dari node 0, seq=356, next_token=0[0m
+[0;32mI (23470) AETHER_NODE: ESP-NOW diterima dari node 0, seq=357, next_token=0[0m
+[0;32mI (23490) AETHER_NODE: ESP-NOW diterima dari node 0, seq=358, next_token=0[0m
+[0;32mI (23510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=359, next_token=1[0m
+[0;32mI (23640) AETHER_NODE: ESP-NOW diterima dari node 0, seq=360, next_token=0[0m
+[0;32mI (23660) AETHER_NODE: ESP-NOW diterima dari node 0, seq=361, next_token=0[0m
+[0;32mI (23680) AETHER_NODE: ESP-NOW diterima dari node 0, seq=362, next_token=0[0m
+[0;32mI (23700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=363, next_token=0[0m
+[0;32mI (23720) AETHER_NODE: ESP-NOW diterima dari node 0, seq=364, next_token=1[0m
+[0;32mI (23850) AETHER_NODE: ESP-NOW diterima dari node 0, seq=365, next_token=0[0m
+[0;32mI (23870) AETHER_NODE: ESP-NOW diterima dari node 0, seq=366, next_token=0[0m
+[0;32mI (23890) AETHER_NODE: ESP-NOW diterima dari node 0, seq=367, next_token=0[0m
+[0;32mI (23910) AETHER_NODE: ESP-NOW diterima dari node 0, seq=368, next_token=0[0m
+[0;32mI (23930) AETHER_NODE: ESP-NOW diterima dari node 0, seq=369, next_token=1[0m
+[0;32mI (24060) AETHER_NODE: ESP-NOW diterima dari node 0, seq=370, next_token=0[0m
+[0;32mI (24080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=371, next_token=0[0m
+[0;32mI (24100) AETHER_NODE: ESP-NOW diterima dari node 0, seq=372, next_token=0[0m
+[0;32mI (24120) AETHER_NODE: ESP-NOW diterima dari node 0, seq=373, next_token=0[0m
+[0;32mI (24140) AETHER_NODE: ESP-NOW diterima dari node 0, seq=374, next_token=1[0m
+[0;32mI (24270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=375, next_token=0[0m
+[0;32mI (24290) AETHER_NODE: ESP-NOW diterima dari node 0, seq=376, next_token=0[0m
+[0;32mI (24310) AETHER_NODE: ESP-NOW diterima dari node 0, seq=377, next_token=0[0m
+[0;32mI (24330) AETHER_NODE: ESP-NOW diterima dari node 0, seq=378, next_token=0[0m
+[0;32mI (24350) AETHER_NODE: ESP-NOW diterima dari node 0, seq=379, next_token=1[0m
+[0;32mI (24480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=380, next_token=0[0m
+[0;32mI (24500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=381, next_token=0[0m
+[0;32mI (24520) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=901, type=0[0m
+[0;32mI (24520) AETHER_NODE: ESP-NOW diterima dari node 0, seq=382, next_token=0[0m
+[0;32mI (24540) AETHER_NODE: ESP-NOW diterima dari node 0, seq=383, next_token=0[0m
+[0;32mI (24570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=384, next_token=1[0m
+[0;32mI (24690) AETHER_NODE: ESP-NOW diterima dari node 0, seq=385, next_token=0[0m
+[0;32mI (24710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=386, next_token=0[0m
+[0;32mI (24730) AETHER_NODE: ESP-NOW diterima dari node 0, seq=387, next_token=0[0m
+[0;32mI (24750) AETHER_NODE: ESP-NOW diterima dari node 0, seq=388, next_token=0[0m
+[0;32mI (24770) AETHER_NODE: ESP-NOW diterima dari node 0, seq=389, next_token=1[0m
+[0;32mI (24900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=390, next_token=0[0m
+[0;32mI (24920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=391, next_token=0[0m
+[0;32mI (24940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=392, next_token=0[0m
+[0;32mI (24960) AETHER_NODE: ESP-NOW diterima dari node 0, seq=393, next_token=0[0m
+[0;32mI (24980) AETHER_NODE: ESP-NOW diterima dari node 0, seq=394, next_token=1[0m
+[0;32mI (25110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=395, next_token=0[0m
+[0;32mI (25130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=396, next_token=0[0m
+[0;32mI (25150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=397, next_token=0[0m
+[0;32mI (25170) AETHER_NODE: ESP-NOW diterima dari node 0, seq=398, next_token=0[0m
+[0;32mI (25190) AETHER_NODE: ESP-NOW diterima dari node 0, seq=399, next_token=1[0m
+[0;32mI (25320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=400, next_token=0[0m
+[0;32mI (25340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=401, next_token=0[0m
+[0;32mI (25360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=402, next_token=0[0m
+[0;32mI (25380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=403, next_token=0[0m
+[0;32mI (25400) AETHER_NODE: ESP-NOW diterima dari node 0, seq=404, next_token=1[0m
+[0;32mI (25530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=405, next_token=0[0m
+[0;32mI (25550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=406, next_token=0[0m
+[0;32mI (25570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=407, next_token=0[0m
+[0;32mI (25590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=408, next_token=0[0m
+[0;32mI (25610) AETHER_NODE: ESP-NOW diterima dari node 0, seq=409, next_token=1[0m
+[0;32mI (25740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=410, next_token=0[0m
+[0;32mI (25760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=411, next_token=0[0m
+[0;32mI (25780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=412, next_token=0[0m
+[0;32mI (25800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=413, next_token=0[0m
+[0;32mI (25820) AETHER_NODE: ESP-NOW diterima dari node 0, seq=414, next_token=1[0m
+[0;32mI (25890) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=951, type=2[0m
+[0;32mI (25950) AETHER_NODE: ESP-NOW diterima dari node 0, seq=415, next_token=0[0m
+[0;32mI (25970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=416, next_token=0[0m
+[0;32mI (25990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=417, next_token=0[0m
+[0;32mI (26010) AETHER_NODE: ESP-NOW diterima dari node 0, seq=418, next_token=0[0m
+[0;32mI (26030) AETHER_NODE: ESP-NOW diterima dari node 0, seq=419, next_token=1[0m
+[0;32mI (26160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=420, next_token=0[0m
+[0;32mI (26180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=421, next_token=0[0m
+[0;32mI (26200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=422, next_token=0[0m
+[0;32mI (26220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=423, next_token=0[0m
+[0;32mI (26240) AETHER_NODE: ESP-NOW diterima dari node 0, seq=424, next_token=1[0m
+[0;32mI (26370) AETHER_NODE: ESP-NOW diterima dari node 0, seq=425, next_token=0[0m
+[0;32mI (26390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=426, next_token=0[0m
+[0;32mI (26410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=427, next_token=0[0m
+[0;32mI (26430) AETHER_NODE: ESP-NOW diterima dari node 0, seq=428, next_token=0[0m
+[0;32mI (26450) AETHER_NODE: ESP-NOW diterima dari node 0, seq=429, next_token=1[0m
+[0;32mI (26580) AETHER_NODE: ESP-NOW diterima dari node 0, seq=430, next_token=0[0m
+[0;32mI (26600) AETHER_NODE: ESP-NOW diterima dari node 0, seq=431, next_token=0[0m
+[0;32mI (26620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=432, next_token=0[0m
+[0;32mI (26640) AETHER_NODE: ESP-NOW diterima dari node 0, seq=433, next_token=0[0m
+[0;32mI (26660) AETHER_NODE: ESP-NOW diterima dari node 0, seq=434, next_token=1[0m
+[0;32mI (26790) AETHER_NODE: ESP-NOW diterima dari node 0, seq=435, next_token=0[0m
+[0;32mI (26810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=436, next_token=0[0m
+[0;32mI (26830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=437, next_token=0[0m
+[0;32mI (26850) AETHER_NODE: ESP-NOW diterima dari node 0, seq=438, next_token=0[0m
+[0;32mI (26870) AETHER_NODE: ESP-NOW diterima dari node 0, seq=439, next_token=1[0m
+[0;32mI (27000) AETHER_NODE: ESP-NOW diterima dari node 0, seq=440, next_token=0[0m
+[0;32mI (27020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=441, next_token=0[0m
+[0;32mI (27040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=442, next_token=0[0m
+[0;32mI (27060) AETHER_NODE: ESP-NOW diterima dari node 0, seq=443, next_token=0[0m
+[0;32mI (27080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=444, next_token=1[0m
+[0;32mI (27210) AETHER_NODE: ESP-NOW diterima dari node 0, seq=445, next_token=0[0m
+[0;32mI (27220) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1001, type=0[0m
+[0;32mI (27230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=446, next_token=0[0m
+[0;32mI (27250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=447, next_token=0[0m
+[0;32mI (27270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=448, next_token=0[0m
+[0;32mI (27290) AETHER_NODE: ESP-NOW diterima dari node 0, seq=449, next_token=1[0m
+[0;32mI (27420) AETHER_NODE: ESP-NOW diterima dari node 0, seq=450, next_token=0[0m
+[0;32mI (27440) AETHER_NODE: ESP-NOW diterima dari node 0, seq=451, next_token=0[0m
+[0;32mI (27460) AETHER_NODE: ESP-NOW diterima dari node 0, seq=452, next_token=0[0m
+[0;32mI (27480) AETHER_NODE: ESP-NOW diterima dari node 0, seq=453, next_token=0[0m
+[0;32mI (27500) AETHER_NODE: ESP-NOW diterima dari node 0, seq=454, next_token=1[0m
+[0;32mI (27630) AETHER_NODE: ESP-NOW diterima dari node 0, seq=455, next_token=0[0m
+[0;32mI (27650) AETHER_NODE: ESP-NOW diterima dari node 0, seq=456, next_token=0[0m
+[0;32mI (27670) AETHER_NODE: ESP-NOW diterima dari node 0, seq=457, next_token=0[0m
+[0;32mI (27690) AETHER_NODE: ESP-NOW diterima dari node 0, seq=458, next_token=0[0m
+[0;32mI (27710) AETHER_NODE: ESP-NOW diterima dari node 0, seq=459, next_token=1[0m
+[0;32mI (27840) AETHER_NODE: ESP-NOW diterima dari node 0, seq=460, next_token=0[0m
+[0;32mI (27860) AETHER_NODE: ESP-NOW diterima dari node 0, seq=461, next_token=0[0m
+[0;32mI (27880) AETHER_NODE: ESP-NOW diterima dari node 0, seq=462, next_token=0[0m
+[0;32mI (27900) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1051, type=0[0m
+[0;32mI (27900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=463, next_token=0[0m
+[0;32mI (27920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=464, next_token=1[0m
+[0;32mI (28050) AETHER_NODE: ESP-NOW diterima dari node 0, seq=465, next_token=0[0m
+[0;32mI (28070) AETHER_NODE: ESP-NOW diterima dari node 0, seq=466, next_token=0[0m
+[0;32mI (28090) AETHER_NODE: ESP-NOW diterima dari node 0, seq=467, next_token=0[0m
+[0;32mI (28110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=468, next_token=0[0m
+[0;32mI (28130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=469, next_token=1[0m
+[0;32mI (28270) AETHER_NODE: ESP-NOW diterima dari node 0, seq=470, next_token=0[0m
+[0;32mI (28280) AETHER_NODE: ESP-NOW diterima dari node 0, seq=471, next_token=0[0m
+[0;32mI (28310) AETHER_NODE: ESP-NOW diterima dari node 0, seq=472, next_token=0[0m
+[0;32mI (28320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=473, next_token=0[0m
+[0;32mI (28340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=474, next_token=1[0m
+[0;32mI (28470) AETHER_NODE: ESP-NOW diterima dari node 0, seq=475, next_token=0[0m
+[0;32mI (28490) AETHER_NODE: ESP-NOW diterima dari node 0, seq=476, next_token=0[0m
+[0;32mI (28510) AETHER_NODE: ESP-NOW diterima dari node 0, seq=477, next_token=0[0m
+[0;32mI (28530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=478, next_token=0[0m
+[0;32mI (28550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=479, next_token=1[0m
+[0;32mI (28680) AETHER_NODE: ESP-NOW diterima dari node 0, seq=480, next_token=0[0m
+[0;32mI (28700) AETHER_NODE: ESP-NOW diterima dari node 0, seq=481, next_token=0[0m
+[0;32mI (28730) AETHER_NODE: ESP-NOW diterima dari node 0, seq=482, next_token=0[0m
+[0;32mI (28750) AETHER_NODE: ESP-NOW diterima dari node 0, seq=483, next_token=0[0m
+[0;32mI (28770) AETHER_NODE: ESP-NOW diterima dari node 0, seq=484, next_token=1[0m
+[0;32mI (28900) AETHER_NODE: ESP-NOW diterima dari node 0, seq=485, next_token=0[0m
+[0;32mI (28920) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1101, type=0[0m
+[0;32mI (28920) AETHER_NODE: ESP-NOW diterima dari node 0, seq=486, next_token=0[0m
+[0;32mI (28940) AETHER_NODE: ESP-NOW diterima dari node 0, seq=487, next_token=0[0m
+[0;32mI (28970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=488, next_token=0[0m
+[0;32mI (28980) AETHER_NODE: ESP-NOW diterima dari node 0, seq=489, next_token=1[0m
+[0;32mI (29110) AETHER_NODE: ESP-NOW diterima dari node 0, seq=490, next_token=0[0m
+[0;32mI (29130) AETHER_NODE: ESP-NOW diterima dari node 0, seq=491, next_token=0[0m
+[0;32mI (29150) AETHER_NODE: ESP-NOW diterima dari node 0, seq=492, next_token=0[0m
+[0;32mI (29170) AETHER_NODE: ESP-NOW diterima dari node 0, seq=493, next_token=0[0m
+[0;32mI (29190) AETHER_NODE: ESP-NOW diterima dari node 0, seq=494, next_token=1[0m
+[0;32mI (29320) AETHER_NODE: ESP-NOW diterima dari node 0, seq=495, next_token=0[0m
+[0;32mI (29340) AETHER_NODE: ESP-NOW diterima dari node 0, seq=496, next_token=0[0m
+[0;32mI (29360) AETHER_NODE: ESP-NOW diterima dari node 0, seq=497, next_token=0[0m
+[0;32mI (29380) AETHER_NODE: ESP-NOW diterima dari node 0, seq=498, next_token=0[0m
+[0;32mI (29400) AETHER_NODE: ESP-NOW diterima dari node 0, seq=499, next_token=1[0m
+[0;32mI (29530) AETHER_NODE: ESP-NOW diterima dari node 0, seq=500, next_token=0[0m
+[0;32mI (29550) AETHER_NODE: ESP-NOW diterima dari node 0, seq=501, next_token=0[0m
+[0;32mI (29570) AETHER_NODE: ESP-NOW diterima dari node 0, seq=502, next_token=0[0m
+[0;32mI (29590) AETHER_NODE: ESP-NOW diterima dari node 0, seq=503, next_token=0[0m
+[0;32mI (29610) AETHER_NODE: ESP-NOW diterima dari node 0, seq=504, next_token=1[0m
+[0;32mI (29710) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1151, type=0[0m
+[0;32mI (29740) AETHER_NODE: ESP-NOW diterima dari node 0, seq=505, next_token=0[0m
+[0;32mI (29760) AETHER_NODE: ESP-NOW diterima dari node 0, seq=506, next_token=0[0m
+[0;32mI (29780) AETHER_NODE: ESP-NOW diterima dari node 0, seq=507, next_token=0[0m
+[0;32mI (29800) AETHER_NODE: ESP-NOW diterima dari node 0, seq=508, next_token=0[0m
+[0;32mI (29820) AETHER_NODE: ESP-NOW diterima dari node 0, seq=509, next_token=1[0m
+[0;32mI (29950) AETHER_NODE: ESP-NOW diterima dari node 0, seq=510, next_token=0[0m
+[0;32mI (29970) AETHER_NODE: ESP-NOW diterima dari node 0, seq=511, next_token=0[0m
+[0;32mI (29990) AETHER_NODE: ESP-NOW diterima dari node 0, seq=512, next_token=0[0m
+[0;32mI (30010) AETHER_NODE: ESP-NOW diterima dari node 0, seq=513, next_token=0[0m
+[0;32mI (30030) AETHER_NODE: ESP-NOW diterima dari node 0, seq=514, next_token=1[0m
+[0;32mI (30160) AETHER_NODE: ESP-NOW diterima dari node 0, seq=515, next_token=0[0m
+[0;32mI (30180) AETHER_NODE: ESP-NOW diterima dari node 0, seq=516, next_token=0[0m
+[0;32mI (30200) AETHER_NODE: ESP-NOW diterima dari node 0, seq=517, next_token=0[0m
+[0;32mI (30220) AETHER_NODE: ESP-NOW diterima dari node 0, seq=518, next_token=0[0m
+[0;32mI (30240) AETHER_NODE: ESP-NOW diterima dari node 0, seq=519, next_token=1[0m
+[0;32mI (30370) AETHER_NODE: ESP-NOW diterima dari node 0, seq=520, next_token=0[0m
+[0;32mI (30390) AETHER_NODE: ESP-NOW diterima dari node 0, seq=521, next_token=0[0m
+[0;32mI (30410) AETHER_NODE: ESP-NOW diterima dari node 0, seq=522, next_token=0[0m
+[0;32mI (30430) AETHER_NODE: ESP-NOW diterima dari node 0, seq=523, next_token=0[0m
+[0;32mI (30450) AETHER_NODE: ESP-NOW diterima dari node 0, seq=524, next_token=1[0m
+[0;32mI (30580) AETHER_NODE: ESP-NOW diterima dari node 0, seq=525, next_token=0[0m
+[0;32mI (30600) AETHER_NODE: ESP-NOW diterima dari node 0, seq=526, next_token=0[0m
+[0;32mI (30620) AETHER_NODE: ESP-NOW diterima dari node 0, seq=527, next_token=0[0m
+[0;32mI (30640) AETHER_NODE: ESP-NOW diterima dari node 0, seq=528, next_token=0[0m
+[0;32mI (30660) AETHER_NODE: ESP-NOW diterima dari node 0, seq=529, next_token=1[0m
+[0;32mI (30790) AETHER_NODE: ESP-NOW diterima dari node 0, seq=530, next_token=0[0m
+[0;32mI (30810) AETHER_NODE: ESP-NOW diterima dari node 0, seq=531, next_token=0[0m
+[0;32mI (30830) AETHER_NODE: ESP-NOW diterima dari node 0, seq=532, next_token=0[0m
+[0;32mI (30850) AETHER_NODE: ESP-NOW diterima dari node 0, seq=533, next_token=0[0m
+[0;32mI (30870) AETHER_NODE: ESP-NOW diterima dari node 0, seq=534, next_token=1[0m
+[0;32mI (31000) AETHER_NODE: [DIAG] promiscuous_rx_callback terpanggil, total=1201, type=0[0m
+[0;32mI (31000) AETHER_NODE: ESP-NOW diterima dari node 0, seq=535, next_token=0[0m
+[0;32mI (31020) AETHER_NODE: ESP-NOW diterima dari node 0, seq=536, next_token=0[0m
+[0;32mI (31040) AETHER_NODE: ESP-NOW diterima dari node 0, seq=537, next_token=0[0m
+[0;32mI (31060) AETHER_NODE: ESP-NOW diterima dari node 0, seq=538, next_token=0[0m
+[0;32mI (31080) AETHER_NODE: ESP-NOW diterima dari node 0, seq=539, next_token=1[0m
+[0;32mI (31210) AETHER_NODE: ESP-NOW diterima dari node 0, seq=540, next_token=0[0m
+[0;32mI (31230) AETHER_NODE: ESP-NOW diterima dari node 0, seq=541, next_token=0[0m
+[0;32mI (31250) AETHER_NODE: ESP-NOW diterima dari node 0, seq=542, next_token=0[0m
